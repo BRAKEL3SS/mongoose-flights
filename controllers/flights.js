@@ -18,7 +18,7 @@ res.render('flights/new', { title: 'New Flight', departsDate });
 function create(req, res) {
     const flight = new Flight(req.body)
     flight.save(function(err) {
-        if (err) return res.render('flights/new')
+        if (err) return res.render('flights/new', {title: 'New Flight'})
         console.log(flight)
         res.redirect('/flights')
     })
