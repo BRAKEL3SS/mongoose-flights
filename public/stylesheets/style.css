@@ -108,3 +108,12 @@ ul {
 li {
   font-weight: bold;
 }
+#show-page {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+}
+
+#show-page div:nth-child(even) {
+  font-weight: bold;
+}
