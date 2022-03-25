@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <title>Flights Home</title>
+</head>
+<body>
+  <nav>
+    <a href="/flights/new" <%- title === 'Add Flight' ? 'class="active"' : '' %>>ADD FLIGHT</a>
+    <a href="/flights" <%- title === 'All Flights' ? 'class="active"' : '' %>>ALL FLIGHTS</a>
+  </nav>
+  <main>
+    <h1>Flights Home</h1>
+    <p>Welcome to Our Home Page!</p>
+    <p>Please use the links in the navbar or down below to navigate</p>
     <a href="/flights">All Flights</a>
-    <a href="/flights/new">New Flight</a>
+    <a href="/flights/new">Add Flight</a>
   </body>
 </html>
